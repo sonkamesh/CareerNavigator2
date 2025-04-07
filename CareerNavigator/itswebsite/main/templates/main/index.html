@@ -1,0 +1,13 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <p>CareerNavigator - платформа для качественной профориентации. Начни сегодня!</p>
+        <a href="{% url 'newapp_home' %}" class="btn btn-danger">Начать диалог со специалистом</a>
+        <a href="{% url 'help' %}" class="btn btn-warning">Как работать с сайтом <i class="fa-solid fa-circle-question"></i></a>
+
+    </div>
+{% endblock %}
